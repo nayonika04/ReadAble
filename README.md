@@ -1,47 +1,101 @@
-# Read•Able
+# Read•Able AI
 
-Read•Able is a simple and accessible news website designed to make daily news easy to read and understand for people of all age groups including 
-people with Dyslexia and impaired vision.
+Read•Able AI is an accessibility-first web application that helps users read and understand text more easily. It is designed for people of all age groups, including users with dyslexia, visual impairments, students, and anyone who prefers clear, easy-to-read content.
 
-The project focuses on clean design, readable layouts, and accessibility-first principles so that users are not overwhelmed by complex language or cluttered UI.
+The project combines a clean user interface with a Flask-powered backend to analyse text and provide readability insights, making reading more accessible and user-friendly.
 
 ## Features
-- Clean and minimal user interface
-- Easy-to-read news cards
-- Dedicated article reading page
-- Accessibility-focused typography and spacing
-- Fully responsive design (mobile-friendly)
-- Simple navigation between pages
 
-## Built With
-- HTML
-- CSS
+### Current Features
+
+* Clean and minimal user interface
+* Easy-to-read news cards
+* Dedicated article reading page
+* Accessibility-focused typography and spacing
+* Fully responsive design
+* Flask-powered backend
+* Text Analyser
+* Word Count
+* Sentence Count
+* Estimated Reading Time
+* Readability Level Detection (Easy / Medium / Difficult)
+* Personalised readability feedback
+* Simple navigation between pages
+
+## Tech Stack
+
+### Frontend
+
+* HTML5
+* CSS3
+
+### Backend
+
+* Python
+* Flask
+* Jinja2
+
+## Project Structure
+
+```
+ReadAble/
+│
+├── app.py
+├── text_utils.py
+├── templates/
+│   ├── index.html
+│   ├── news.html
+│   ├── about.html
+│   └── analyze.html
+│
+├── static/
+│   └── style.css
+│
+└── README.md
+```
 
 ## Pages
-- Home Page – Displays simplified news cards
-- News Detail Page – Focused reading experience for  
-  articles
-- About Page – Explains the mission and         accessibility goals of the project
 
-##  Project Goal
-The goal of Read•Able is to make news more accessible by:
-- Using simple language
-- Maintaining comfortable reading widths
-- Providing a calm and distraction-free layout
+* **Home Page** – Displays simplified news cards
+* **News Detail Page** – Focused reading experience for articles
+* **About Page** – Explains the mission and accessibility goals
+* **Analyzer Page** – Allows users to analyze pasted text and receive readability insights
 
-This project is being developed as part of learning web development and with
-the intention to contribute to open-source programs.
+## Current Analyzer Features
+
+The Text Analyzer currently provides:
+
+* Total Word Count
+* Sentence Count
+* Estimated Reading Time
+* Readability Level (Easy / Medium / Difficult)
+* Personalized readability feedback
+
+## Project Goal
+
+The goal of Read•Able AI is to make digital content more accessible by:
+
+* Simplifying reading experiences
+* Promoting accessibility-first design
+* Helping users understand complex text more easily
+* Building AI-powered tools that improve readability
+
+This project is being developed as a learning project while exploring full-stack web development, accessibility, and AI-powered text processing.
 
 ## Future Improvements
-- Reading mode (font size controls)
-- Dark mode for better readability
-- Category-based news filtering
-- Keyboard and screen-reader enhancements
-- JavaScript-based interactivity
 
-## Contribution
-This is an open-source project and contributions are welcome.
-Suggestions, improvements, and feedback are appreciated.
+* AI-powered text simplification
+* AI article summarisation
+* Text-to-Speech support
+* Dyslexia-friendly reading mode
+* Font size and spacing controls
+* Dark mode
+* Upload PDF or documents for analysis
+* News recommendation system
+* Accessibility scoring
+* Category-based news filtering
+* Keyboard and screen-reader enhancements
 
 ## Author
-Nayonika Agarwal
+
+**Nayonika Agarwal**
