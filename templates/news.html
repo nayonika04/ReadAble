@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy-to-Read News | Read•Able</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <nav aria-label="Main Navigation">
+
+            <h1 class="logo" aria-label="ReadAble">
+                <span class="logo-read">Read</span>
+                <span class="logo-dot" aria-hidden="true">•</span>
+                <span class="logo-able">Able</span>
+            </h1>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                 <li><a href="/analyze">Analyzer</a></li>
+                <li><a href="#">Reading Mode</a></li>
+                <li><a href="#">Accessibility Tips</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+
+        </nav>
+        </header>
+        <main>
+            <article class="article" aria-labelledby="article-title">
+                <a href="/" class="back-link">← Back to Home</a>
+             <h1 id="article-title">
+                The Stock Market Ends Higher Today
+             </h1>
+
+             <p class="article-meta">
+              Easy Finance - 2 min read
+             </p>
+
+             <p>
+                The stock market closed higher today as shares of banking and IT companies gained value. Many investors felt confident after seeing stable
+                 global markets.
+             </p>
+
+             <p>
+                 Experts say that small daily changes in the market are normal.
+                 Long-term investors are advised to stay calm and focus on their goals.
+             </p>
+
+             <p>
+              For beginners, this means the market is showing positive signs,
+              but it is always important to invest carefully. 
+             </p>
+            </article>
+        </main>
+    
+</body>
+</html>

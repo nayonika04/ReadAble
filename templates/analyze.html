@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read•Able - Text Analyzer</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <nav aria-label="Main Navigation">
+
+        <h1 class="logo">
+            <span class="logo-read">Read</span>
+            <span class="logo-dot">•</span>
+            <span class="logo-able">Able</span>
+        </h1>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/news">News</a></li>
+            <li><a href="/analyze">Analyzer</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <h2>Text Analyzer</h2>
+
+        <p>
+            Paste any article below and let Read•Able AI analyze it.
+        </p>
+
+        <form method="POST" action="/process">
+
+            <textarea name="article" rows="12" cols="80" placeholder="Paste your article here...">{{ text }}</textarea>
+
+            <br><br>
+
+            <button type="submit" class="hero-btn">
+                Analyze
+            </button>
+
+        </form>
+        {% if words is not none %}
+
+<h2>Analysis Results</h2>
+
+<p><strong>Words:</strong> {{ words }}</p>
+
+<p><strong>Sentences:</strong> {{ sentences }}</p>
+
+<p><strong>Reading Time:</strong> {{ reading_time }}</p>
+
+<p><strong>Readability Level:</strong> {{ difficulty }}</p>
+
+<p>{{ message }}</p>
+
+{% endif %}
+
+    </section>
+
+</main>
+
+</body>
+</html>
